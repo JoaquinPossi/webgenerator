@@ -1,0 +1,506 @@
+body{ 
+    margin: 0;
+    /*max-height: 100vw;*/
+    background: #0c0c1c;
+}
+#wrapper{
+    display: flex;
+    width: 100%;
+    background: #0c0d21;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#wrapper_panel{
+    display: flex;
+    width: 100%;
+    background: #0c1424;
+    justify-content: space-between;
+    flex-direction: row;
+}
+#landing{
+    height: 65vw;
+    width: 50vw;
+}
+#logo{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+/*#logo:hover{
+    transform: scale(1.01);
+    transition: 0.5s;
+}*/
+#imagen__index{
+    width: 49vw;
+}
+.foto__logo{
+    height: 6.5vw;
+}
+.btn_index{
+    text-decoration: none;
+    display: flex;
+    color: #e4d4f4;
+    justify-content: space-around;
+    width: 18vw;
+    font-size: 3vw;
+    border-radius: 0.4vw;
+    font-family: 'Ubuntu',monospace;
+    border: solid 1.5vw #539fdf;
+    background: #539fdf;
+}
+.btn_index:hover{
+    background:  #2d4f8e;
+    border: solid 1.5vw #2d4f8e;
+    transition: 0.2s;
+}
+#texto_landing{
+    margin: 0vw;
+    text-align: center;
+    text-decoration: blink;
+    text-decoration-color: lemonchiffon;
+    color: #e5dcf5;
+    height: 43vw;
+    font-size: 5vw;
+    font-style: revert;
+    font-family: 'Ubuntu',system-ui;
+    display: flex;
+    flex-direction: column;
+}
+#control{
+    display: flex;
+    justify-content: space-between;
+    margin: 2vw;
+}
+.txt{
+    height: 4vw;
+    width: 35vw;
+    background: #e4d4e9;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Ubuntu', monospace;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #07112b;
+}
+.boton_iniciar{
+    width: 20vw;
+    height: 4vw;
+    border: none;
+    border-radius: 2px;
+    background: #9e71ce;
+    font-size: 2vw;
+    font-family: monospace;
+    color: #e4d4f4;
+}
+.boton_iniciar:hover{
+    width: 20vw;
+    height: 4vw;
+    border: none;
+    border-radius: 2px;
+    background: #5525ad;
+    font-size: 2vw;
+    font-family: monospace;
+    color: #e4d4f4;
+    transition: 0.2s;
+}
+.barramenu{
+    height: 65vw;
+    text-align: center;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    /*transform: translateX(-29vw);
+    transition: 0.5s;*/
+}
+.barramenu:hover{
+    /*transform: translateX(0vw);
+    transition: 0.5s;*/
+}
+.body__centro{
+    overflow: overlay;
+        height: 65vw;
+    width: 50vw;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+.Opciones_Menu{
+    margin-top: 4vw;
+    text-decoration: solid;
+    color: #e5dcf5;
+    font-size: 4vw;
+    font-family: monospace;
+}
+.Opciones_Menu:hover{
+    background: #033a42;
+    border-radius: 3vw;
+}
+.evento{
+    border-bottom: solid #033a42;
+    height: auto;
+    background: #080b12;
+}
+.evento__titulo{
+    color: #e5dcf5;
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+.evento__fecha{
+    color: #4d5c77;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: monospace;
+    margin-left: 4vw;
+    text-align: center;
+    display: flex;
+}
+.evento__header{
+    display: flex;
+    flex-direction: initial;
+    text-align: center;
+    justify-content: space-around;
+}
+.evento__contenido{
+    color: #e4d4f4;
+    font-size: 3vw;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: monospace;
+    max-width: 45vw;
+    overflow: overlay;
+}
+.evento__icono{
+    margin-left: 3vw;
+    text-decoration: none;
+    color: azure;
+    font-size: 4vw;
+}
+.evento__boton__guardar{
+    display: none;
+}
+.evento__marcar__completado{
+    color: #4d5c77;
+    font-family: monospace;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3vw;
+}
+.evento__marcar__importante{
+    color: #4d5c77;
+    font-family: monospace;
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3vw;
+}
+.evento__body{
+    display: flex;
+    justify-content: space-evenly;
+}
+.evento__vencimiento{
+    font-size: 2vw;
+    font-family: monospace;
+    width: 16vw;
+    color: #4d5c77;
+    line-height: 2.9vw;
+    margin-left: 2vw;
+}
+.evento__guardar{
+    font-size: 2vw;
+    font-family: monospace;
+    width: 10vw;
+    color: #8096bd;
+    line-height: 2.9vw;
+    margin-left: 2vw;
+    text-align: center;
+    background: #1e2f51;
+    border-radius: 4px;
+}
+.evento__guardar:hover{
+    background: #0c1424;
+}
+.Foto__de__perfil{
+    justify-content: center;
+    display: flex;
+    margin: 2vw;
+}
+.div__nombre{
+    height: 5vw;
+    width: 20vw;
+    color: #e5dcf5;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 2vw;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.txt__input{
+    height: 4w;
+    width: 20vw;
+    background: #e4d4e9;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Ubuntu', monospace;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #07112b;
+}
+#BotonBorrar{
+        display: flex;
+    flex-direction: column;
+    width: 22vw;
+    justify-content: center;
+    text-align: center;
+}
+.txt_url{
+    border: none;
+    background: #0c1424;
+    width: 30vw;
+    border-radius: 0.5vw;
+    height: 4vw;
+    font-size: 3vw;
+    font-family: monospace;
+    color: #e5dcf5;
+    text-align: center;
+}
+.input__contenido{
+    margin-top: 1vw;
+    border: none;
+    background: #0c1424;
+    width: 45vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    height: 5vw;
+    color: #e4d4f4;
+    font-size: 2.5vw;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: monospace;
+    max-width: 45vw;
+}
+.input__fecha{
+    height: 5vw;
+    width: 16vw;
+    border-radius: 0.5vw;
+    border: none;
+    color: #e5dcf5;
+    background: #0c1424;
+    font-size: 2.2vw;
+}
+@media only screen and (max-width: 799px) {
+    .flex-direction{
+        flex-direction: column;
+    }
+    #landing{
+        height: 100%;
+        margin-bottom: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .foto{
+        height: 100%;
+        width: 100%;
+        
+    }
+    #logo{
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        height: 10%;
+        justify-content: center;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /*#logo:hover{
+        transform: scale(1.01);
+        transition: 0.5s;
+    }*/
+    #imagen__index{
+        width: 100%;
+        height: 100%;
+    }
+    .foto__logo{
+        width: 80%;
+        height: 100%;
+    }
+    #control{
+        display: flex;
+    justify-content: space-evenly;
+    margin: 4%;
+    }
+    .btn_index{
+        text-decoration: none;
+    display: flex;
+    color: #e4d4f4;
+    justify-content: space-around;
+    width: 40%;
+    font-size: 5vw;
+    border-radius: 0.4vw;
+    font-family: 'Ubuntu',monospace;
+    border: solid 1.5vw #145c4c;
+    background: #145c4c;
+    }
+    #texto_landing{
+        margin: 0vw;
+    height: 100%;
+    text-align: center;
+    text-decoration: blink;
+    text-decoration-color: lemonchiffon;
+    color: #e5dcf5;
+    width: 100%;
+    font-size: 5vw;
+    font-style: revert;
+    font-family: 'Ubuntu',system-ui;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    .txt{
+        height: 10vw;
+    margin: 2%;
+    width: 85%;
+    background: #e4d4e9;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Ubuntu', monospace;
+    font-size: 80%;
+    text-align: center;
+    }
+    .boton_iniciar{
+        width: 60%;
+    height: 10vw;
+    border: none;
+    margin: 2%;
+    border-radius: 2px;
+    background: #9e71ce;
+    font-size: 80%;
+    font-family: monospace;
+    color: #e4d4f4;
+    }
+    .body__centro{
+        width: 90%;
+        height: 100vw;
+
+    }
+    .treinta{
+        width: 30%;
+    }
+    .none{
+        display: none;
+    }
+    #wrapper{
+        display: flex;
+    width: 100%;
+    background: #0c1424;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .barramenu{
+        height: 15vw;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    }
+    #wrapper_panel{
+        display: flex;
+        width: 100%;
+        background: #0c1424;
+        align-items: center;
+        flex-direction: column;
+    }
+    .evento{
+        border: solid #033a42;
+        margin: 2%;
+        padding: 2%;
+        height: auto;
+        background: #080b12;
+    }
+    .evento__titulo{color: #e5dcf5;
+    font-size: 5vw;
+    width: 90%;
+    font-style: normal;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: monospace;
+    }
+    svg{
+        height: 20px;
+        widows: 20px;
+    }
+    .evento__contenido{
+        font-size: 5vw;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: monospace;
+    max-width: 100%;
+    }
+    .evento__guardar{
+        width: 25%;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    font-size: 100%;
+    }
+    .evento__div__marcar{
+        width: 35%;
+    height: 8vw;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    }
+    .evento__marcar__completado{
+        color: #4d5c77;
+    font-family: monospace;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3vw;
+    }
+    .evento__marcar__importante{
+        color: #4d5c77;
+    font-family: monospace;
+    font-size: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 3vw;
+    }
+    .evento__input{
+        height: 3vw;
+    }
+    .evento__vencimiento{
+        width: 33%;
+    height: 8vw;
+    font-size: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+}
